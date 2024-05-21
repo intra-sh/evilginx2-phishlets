@@ -29,7 +29,7 @@ auth_urls:
   - '/accounts/welcome'  
 credentials:
   username:
-    key: 'username'
+    key: 'accountIdentifier'
     search: '(.*)'
     type: 'post'
   password:
